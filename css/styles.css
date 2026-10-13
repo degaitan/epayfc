@@ -1,0 +1,193 @@
+body {background-color: #0f1f33;}
+form {background-color: #323234;
+    width: 30%;
+    max-width: 350px;
+    min-width: 300px;
+    margin: 10px auto;
+    color: white;
+    border-radius: 8px;
+    padding: 0 15px 15px 15px;
+    box-sizing: border-box;
+    text-align: center;
+}
+form h2 {
+    margin: 0 0 10px 0;
+    text-align: center;
+    padding-top : 10px;
+}
+.main_title {
+    color : white;
+    text-align: center;
+    font-size: 32px;
+    padding: 2px;
+    margin-top: 20px;
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap : 10px;
+    margin : 0 0 15px 0;
+
+}
+.buttons button {
+    width : 100%;
+    border-radius: 8px;
+    height: 40px;
+    color : white;
+}
+
+.buttons button:nth-child(1){
+    background-color: #62b0e5;
+}
+.buttons button:nth-child(2){
+    background-color: gray;
+}
+
+.input_fields{
+    display: flex;
+    flex-direction: column;
+    gap : 10px;
+    margin : 15px 0;
+    width: 100%;
+}
+.input_fields input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 10px 10px 40px;
+    border-radius: 8px;
+    background-color: #2b2c2b;
+    color: white;
+}
+.fields_buttons{
+    border-bottom: 1px solid grey;
+    border-top: 0.1px solid grey;
+    margin-right: 5px;
+    margin-left: 5px;
+    flex-direction: column;
+    gap: 10px;
+}
+.input_fields .input_box {
+    position: relative;
+}
+
+.input_fields i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    padding: 3px;
+    border: 1px solid #464746;
+    background-color: #464746;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-family: inherit;  /* Don't override icon font */
+    font-style: normal;    /* Required for ::before content */
+    font-weight: normal;
+}
+.input_fields input {
+    padding: 10px 10px 10px 40px;
+}
+
+.debug_link {
+    color: white;
+    text-decoration: none;
+}
+.debug_list {
+    list-style: none;
+    padding-left: 0;
+}
+.debug_list li {
+    text-align: center;
+    font-size: 15px;
+    padding: 3px;
+}
+.debug p {
+    color: #ffa433;
+    font-size: 20px;
+}
+.subscribe a {
+    color: #62b0e5;
+    text-decoration: underline;
+}
+.subscribe {
+    padding-bottom: 15px;
+}
+.debug_list a.original_data {
+    color: #2ab133;
+    font-weight: bold;
+}
+
+a.debug_link.personal_data {color : orange;}
+
+.signup_buttons input[type="submit"] {
+    background-color: #62b0e5; /* your blue */
+    color: white;
+    border-radius: 8px;
+    border: none;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.signup_buttons button:hover {
+    background-color: #5296d1;
+}
+
+.signup_buttons input[type="reset"] {
+    background-color: #323234;
+    color: #752f2f;
+    border: 2px solid #752f2f;
+    border-radius: 8px;
+    height: 40px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.errors {
+    background-color: #752f2f;
+    color: #fff;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 6px;
+    max-width: 350px;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.errors ul {
+    padding-left: 20px;
+    margin: 5px 0 0 0;
+}
+.guest_button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: gray;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.guest_button:hover {
+    background-color: #5a5a5a;
+    cursor: pointer;
+}.form_title {
+     border-bottom: 1px solid grey;
+     padding-bottom: 8px;
+     margin-bottom: 15px;
+     text-align: center;
+     color: white;      
+ }
+
+

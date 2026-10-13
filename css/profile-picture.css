@@ -1,0 +1,291 @@
+/* ===== RESET MINIMAL ===== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #0f172a;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: #e5e7eb;
+    padding-bottom: 130px;
+}
+
+/* ===== PAGE ===== */
+.page {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.page-title {
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+/* ===== CARD ===== */
+.card {
+    background: #1e293b;
+    border-radius: 6px;
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+
+.card-header {
+    background: #334155;
+    padding: 12px 16px;
+    font-weight: 600;
+}
+
+.card-content {
+    padding: 24px;
+}
+
+/* ===== PROFILE CENTER (CLÉ DU PROBLÈME) ===== */
+.profile-center {
+    display: flex;
+    flex-direction: column;   /* empilé */
+    align-items: center;      /* CENTRAGE HORIZONTAL */
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+/* ===== AVATAR ===== */
+.profile-avatar {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #475569;
+    margin-bottom: 12px;
+}
+
+/* ===== TEXT ===== */
+.profile-name {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.profile-username {
+    color: #94a3b8;
+}
+
+/* ===== FORM ===== */
+.form-label {
+    display: block;
+    margin-bottom: 6px;
+}
+
+.required {
+    color: #f87171;
+}
+
+input[type="file"] {
+    margin-bottom: 10px;
+    color: #cbd5f5;
+}
+
+.form-help {
+    font-size: 13px;
+    color: #94a3b8;
+    margin-bottom: 16px;
+}
+
+/* ===== BUTTONS ===== */
+.btn {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: #3b82f6;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: #2563eb;
+}
+
+.btn-danger {
+    background: #ef4444;
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background: #dc2626;
+}
+
+/* ===== WARNING ===== */
+.warning {
+    background: #3f2f00;
+    border: 1px solid #facc15;
+    color: #fde68a;
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+/* ============================= */
+/* Bottom Navigation (MATCH UI) */
+/* ============================= */
+
+.bottom-nav {
+    position: fixed;
+    bottom: 45px;
+    left: 0;
+    right: 0;
+    background: #16263b;
+    border-top: 1px solid #243a5a;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    z-index: 100;
+}
+
+/* Nav items */
+.bottom-nav .nav-item {
+    text-align: center;
+    font-size: 14px;
+    color: #9fb3cc;
+    text-decoration: none;
+}
+
+/* Icons */
+.bottom-nav .nav-item i {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+/* Labels */
+.bottom-nav .nav-item span {
+    display: block;
+    font-size: 12px;
+}
+
+/* Active state */
+.bottom-nav .nav-item.active {
+    color: #4aa3ff;
+}
+
+/* Prevent Bootstrap link overrides */
+.bottom-nav a,
+.bottom-nav a:link,
+.bottom-nav a:visited,
+.bottom-nav a:hover,
+.bottom-nav a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* ===== ERROR MESSAGE ===== */
+.error-message {
+    background: #3f1d1d;
+    border: 1px solid #ef4444;
+    color: #fecaca;
+    padding: 12px 14px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    font-size: 14px;
+}
+
+/*.top-bar {
+    height: 56px;
+    background: #0c1b2d;
+    border-bottom: 1px solid #1c2f4a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    text-align: center;
+}
+
+.top-bar h1 {
+    font-size: 18px;
+    color: #4aa3ff;
+}*/
+
+.top-bar {
+    height: 56px;
+    background: #0c1b2d;
+    border-bottom: 1px solid #1c2f4a;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    position: relative;
+}
+
+.top-bar h1 {
+    font-size: 20px;
+    color: #4aa3ff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+}
+
+.back-btn,
+.top-icon {
+    color: #9fb3cc;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* ===== APP TIME (DEV BAR) ===== */
+.app-time-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background: #2b2f33;
+    border-top: 1px solid #3f3f46;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 8px 12px;
+    font-size: 13px;
+    color: #e5e7eb;
+
+    z-index: 9999;
+}
+
+.app-time-label {
+    font-weight: 500;
+}
+
+.app-time-actions form {
+    display: inline-block;
+    gap: 6px;
+}
+
+.app-time-actions button {
+    background: #3f3f46;
+    border: none;
+    color: #f9fafb;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.app-time-actions button:hover {
+    background: #52525b;
+}
+
+.app-time-actions .reset {
+    background: #7f1d1d;
+}
+
+.app-time-actions .reset:hover {
+    background: #991b1b;
+}
+
+

@@ -1,0 +1,362 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* ============================= */
+/* Anchor HARD reset (FIX)       */
+/* ============================= */
+a,
+a:link,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    outline: none;
+}
+
+/* Ensure no child text gets underlined */
+.list-item *,
+.nav-item * {
+    text-decoration: none;
+}
+
+/* Explicit list-item link color */
+a.list-item {
+    color: #e6edf5;
+}
+/* ============================= */
+
+body {
+    background: linear-gradient(180deg, #0b1624, #0f1f33);
+    color: #e6edf5;
+    min-height: 100vh;
+    /*padding-bottom: 80px;*/
+    padding-bottom: 130px; /* bottom nav + app time bar */
+}
+
+/* Top bar */
+.top-bar {
+    background: #0c1b2d;
+    padding: 16px;
+    text-align: center;
+    border-bottom: 1px solid #1c2f4a;
+}
+
+.top-bar h1 {
+    font-size: 20px;
+    color: #4aa3ff;
+}
+
+.cart {
+    font-size: 16px;
+}
+
+/* Layout */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 16px;
+}
+
+/* Cards */
+.card {
+    background: #1a1f26;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 24px;
+    border: 1px solid #273447;
+}
+
+/* Profile card */
+.profile-card {
+    text-align: center;
+}
+
+.profile-pic {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    border: 3px solid #4aa3ff;
+    margin-bottom: 12px;
+}
+
+.profile-card h2 {
+    font-size: 22px;
+    margin-bottom: 4px;
+}
+
+.username {
+    color: #8aa9c7;
+    font-size: 14px;
+}
+
+.email {
+    color: #a9bdd6;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+/* Sections */
+.section {
+    margin-bottom: 28px;
+}
+
+.section-title {
+    background: #2a3b52;
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+/* ============================= */
+/* FIX Bootstrap link overrides */
+/* ============================= */
+
+/* Force list-item links to behave like cards */
+a.list-item {
+    color: #e6edf5 !important;
+    text-decoration: none !important;
+}
+
+/* Title text */
+a.list-item strong {
+    color: #e6edf5 !important;
+    text-decoration: none !important;
+}
+
+/* Subtitle text */
+a.list-item span {
+    color: #9db2cc !important;
+    text-decoration: none !important;
+}
+
+/* Icons inherit card color */
+a.list-item .icon,
+a.list-item i {
+    color: #4aa3ff;
+    text-decoration: none !important;
+}
+
+/* Hover behavior (matches target screenshot) */
+a.list-item:hover {
+    background: #202633;
+}
+
+a.list-item:hover strong {
+    color: #4aa3ff !important;
+}
+
+/* Logout overrides */
+a.list-item.logout {
+    color: #f07171 !important;
+    border-color: #d9534f;
+}
+
+a.list-item.logout strong,
+a.list-item.logout span,
+a.list-item.logout i {
+    color: #f07171 !important;
+}
+
+a.list-item.logout:hover {
+    background: #2a1c1c;
+}
+
+
+/* List items */
+.list-item {
+    display: flex;
+    align-items: center;
+    background: #1a1f26;
+    border: 1px solid #3b7fc4;
+    border-radius: 8px;
+    padding: 14px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    box-shadow: 0 0 0 1px rgba(74,163,255,0.15);
+}
+
+.list-item:hover {
+    background: #202633;
+    box-shadow: 0 0 0 1px rgba(74,163,255,0.15);
+}
+
+.icon {
+    font-size: 20px;
+    margin-right: 14px;
+}
+
+.text strong {
+    display: block;
+    font-size: 15px;
+}
+
+.text span {
+    font-size: 13px;
+    color: #9db2cc;
+}
+
+/* Logout */
+.list-item.logout {
+    border-color: #d9534f;
+    color: #f07171;
+}
+
+.list-item.logout:hover {
+    background: #2a1c1c;
+}
+
+/* Bottom navigation */
+.bottom-nav {
+    position: fixed;
+    bottom: 45px;
+    left: 0;
+    right: 0;
+    background: #16263b;
+    border-top: 1px solid #243a5a;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.nav-item {
+    text-align: center;
+    font-size: 14px;
+    color: #9fb3cc;
+}
+
+.nav-item i {
+    display: block;
+    font-size: 18px;
+}
+
+.nav-item span {
+    display: block;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.nav-item.active {
+    color: #4aa3ff;
+}
+
+/* ================================= */
+/* PROFILE PAGE – Bootstrap override */
+/* ================================= */
+
+.profile-page a,
+.profile-page a:link,
+.profile-page a:visited,
+.profile-page a:hover,
+.profile-page a:active,
+.profile-page a:focus {
+    color: inherit !important;
+    text-decoration: none !important;
+}
+
+/* Clickable cards */
+.profile-page a.list-item {
+    color: #e6edf5 !important;
+    text-decoration: none !important;
+}
+
+/* Titles */
+.profile-page a.list-item strong {
+    color: #e6edf5 !important;
+}
+
+/* Subtitles */
+.profile-page a.list-item span {
+    color: #9db2cc !important;
+}
+
+/* Icons */
+.profile-page a.list-item .icon,
+.profile-page a.list-item i {
+    color: #4aa3ff !important;
+}
+
+/* Hover state */
+.profile-page a.list-item:hover {
+    background: #202633;
+}
+
+.profile-page a.list-item:hover strong {
+    color: #4aa3ff !important;
+}
+
+/* Logout */
+.profile-page a.list-item.logout {
+    border-color: #d9534f;
+}
+
+.profile-page a.list-item.logout,
+.profile-page a.list-item.logout strong,
+.profile-page a.list-item.logout span,
+.profile-page a.list-item.logout i {
+    color: #f07171 !important;
+}
+
+.profile-page a.list-item.logout:hover {
+    background: #2a1c1c;
+}
+
+/* ===== APP TIME (DEV BAR) ===== */
+.app-time-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background: #2b2f33;
+    border-top: 1px solid #3f3f46;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 8px 12px;
+    font-size: 13px;
+    color: #e5e7eb;
+
+    z-index: 9999;
+}
+
+.app-time-label {
+    font-weight: 500;
+}
+
+.app-time-actions form {
+    display: inline-block;
+    gap: 6px;
+}
+
+.app-time-actions button {
+    background: #3f3f46;
+    border: none;
+    color: #f9fafb;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.app-time-actions button:hover {
+    background: #52525b;
+}
+
+.app-time-actions .reset {
+    background: #7f1d1d;
+}
+
+.app-time-actions .reset:hover {
+    background: #991b1b;
+}

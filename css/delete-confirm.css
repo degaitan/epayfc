@@ -1,0 +1,122 @@
+/* Reset basique et police */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #101623; /* Le fond bleu nuit de la capture */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+/* Conteneur principal pour centrer */
+.confirm-container {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* La carte modale */
+.confirm-card {
+    background-color: #252628; /* Gris foncé de la carte */
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Icone Poubelle */
+.icon-wrapper {
+    margin-bottom: 1rem;
+}
+
+.icon-wrapper i {
+    font-size: 4rem; /* Grande taille */
+    color: #F84F4F; /* Rouge clair */
+    display: block;
+    line-height: 1;
+}
+
+/* Titre "Are you sure?" */
+.confirm-title {
+    color: #F84F4F; /* Même rouge que l'icône */
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+/* Ligne de séparation */
+.divider {
+    width: 100%;
+    border: 0;
+    border-top: 1px solid #3e4042;
+    margin-bottom: 1.5rem;
+}
+
+/* Texte principal */
+.confirm-message {
+    color: #e5e7eb;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.confirm-message strong {
+    font-weight: 700;
+    color: #ffffff;
+}
+
+/* Texte d'avertissement */
+.confirm-warning {
+    color: #d1d5db;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+}
+
+/* Zone des boutons */
+.confirm-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Styles communs des boutons */
+.btn {
+    padding: 10px 24px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+    transition: opacity 0.2s;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* Bouton Cancel */
+.btn-cancel {
+    background-color: #6c757d; /* Gris moyen */
+    color: white;
+}
+
+/* Bouton Delete */
+.btn-delete {
+    background-color: #F84F4F; /* Rouge */
+    color: white;
+}

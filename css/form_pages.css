@@ -1,0 +1,521 @@
+/* ===== RESET ===== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body.form-page {
+    background: linear-gradient(180deg, #0b1624, #0f1f33);
+    color: #e6edf5;
+    min-height: 100vh;
+    padding-bottom: 130px;
+}
+
+/* ===== TOP BAR ===== */
+.top-bar {
+    height: 56px;
+    background: #0c1b2d;
+    border-bottom: 1px solid #1c2f4a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+}
+
+.top-bar h1 {
+    font-size: 18px;
+    color: #4aa3ff;
+}
+
+.back-btn,
+.top-icon {
+    color: #9fb3cc;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.invisi-btn {
+    background: transparent;
+    border: none;
+    font-size: 0;
+}
+
+.category-box {
+    display: flex;
+    margin: 10px;
+}
+
+.category-input {
+    max-width: 600px;
+    height: 32px;
+}
+
+.new-cat-input {
+    max-width: 800px;
+    height: 32px;
+}
+
+/* ===== LAYOUT ===== */
+.container {
+    max-width: 900px;
+    margin: 24px auto;
+    padding: 0 16px;
+}
+
+/* ===== CARD ===== */
+.card {
+    background: #1a1f26;
+    border-radius: 10px;
+    margin-bottom: 24px;
+    border: 1px solid #273447;
+    overflow: hidden;
+    color: #e6edf5
+}
+
+.card-header {
+    background: #334155;
+    padding: 12px 16px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.form-checklist {
+    display: grid;
+    grid-template-columns: 1em auto;
+    gap: 1em;
+}
+
+.form-checkbox {
+    margin: 0;
+    font: inherit;
+    accent-color: #0b1624;
+    width: 1.15em;
+    height: 1.15em;
+    transform: translateY(0.15em);
+}
+
+.checkbox-label {
+    border: 10px
+}
+
+/* ===== FORM ===== */
+.form-label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.optional {
+    color: #9db2cc;
+    font-weight: 400;
+}
+
+input {
+    width: 100%;
+    background: #111827;
+    border: 1px solid #334155;
+    border-radius: 6px;
+    padding: 10px 12px;
+    color: #e6edf5;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4aa3ff;
+}
+
+.form-help {
+    font-size: 13px;
+    color: #9db2cc;
+    margin-bottom: 16px;
+}
+
+/* ===== BOTTOM NAV ===== */
+.bottom-nav {
+    position: fixed;
+    bottom: 45px;
+    left: 0;
+    right: 0;
+    background: #16263b;
+    border-top: 1px solid #243a5a;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.bottom-nav .nav-item {
+    text-align: center;
+    font-size: 14px;
+    color: #9fb3cc;
+    text-decoration: none;
+}
+
+.bottom-nav .nav-item i {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.bottom-nav .nav-item span {
+    font-size: 12px;
+}
+
+.bottom-nav .nav-item.active {
+    color: #4aa3ff;
+}
+
+/* ===== BOOTSTRAP LINK OVERRIDE (SCOPED) ===== */
+.form-page a,
+.form-page a:link,
+.form-page a:visited,
+.form-page a:hover,
+.form-page a:active {
+    color: inherit;
+    text-decoration: none;
+}
+.save-btn {
+    background: none;
+    border: none;
+    color: #9fb3cc;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.save-btn:hover {
+    color: #4aa3ff;
+}
+
+.edit-form {
+    min-height: 100vh;
+}
+
+.input-error {
+    border-color: #ef4444 !important;
+}
+
+.form-error {
+    color: #ef4444;
+    font-size: 13px;
+    margin: 6px 0 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.form-error i {
+    font-size: 14px;
+}
+
+.dark-textarea {
+    width: 100%;
+    min-height: 140px;
+
+    padding: 14px 16px;
+    resize: vertical;
+
+    border-radius: 8px;
+    border: 1px solid #334155;
+
+    background: #0f172a;
+    color: #e5e7eb;
+
+    font-size: 14px;
+    line-height: 1.5;
+
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.dark-textarea::placeholder {
+    color: #64748b;
+}
+
+.dark-textarea:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 1px rgba(59, 130, 246, 0.35);
+}
+
+/* ... existing code above ... */
+
+/* ===== SALE TYPE SECTIONS ===== */
+.sale-option {
+    border: 1px solid #334155;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    overflow: hidden;
+}
+
+.sale-option-header {
+    padding: 10px 14px;
+    font-weight: 600;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+
+.sale-option-body {
+    padding: 16px;
+}
+
+/* Auction Theme (Blue) */
+.sale-option.auction {
+    border-color: #1d4ed8;
+}
+
+.sale-option.auction .sale-option-header {
+    background: rgba(37, 99, 235, 0.15); /* Low opacity blue */
+    color: #60a5fa;
+    border-bottom-color: #1d4ed8;
+}
+
+/* Direct Sale Theme (Green) */
+.sale-option.direct {
+    border-color: #047857;
+}
+
+.sale-option.direct .sale-option-header {
+    background: rgba(16, 185, 129, 0.15); /* Low opacity green */
+    color: #34d399;
+    border-bottom-color: #047857;
+}
+
+/* Currency Input Wrapper */
+.input-group {
+    position: relative;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.input-group input {
+    padding-right: 35px; /* Make space for the € symbol */
+    margin-bottom: 0; /* Remove default input margin so wrapper handles spacing */
+}
+
+.currency-symbol {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9ca3af;
+    font-weight: 600;
+    pointer-events: none; /* Ensure clicks pass through to the input */
+}
+
+.upload-btn {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.upload-btn-primary {
+    background: #3b82f6;
+    color: #fff;
+}
+
+.upload-btn-primary:hover {
+    background: #2563eb;
+}
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.image-card {
+    background: #111827;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    padding: 8px;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.img-wrapper {
+    width: 100%;
+    height: 120px;
+    background: #fff;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.img-wrapper img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.image-actions {
+    display: flex;
+    gap: 6px;
+    justify-content: space-between;
+}
+
+.action-btn {
+    flex: 1;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1f2937;
+    border: 1px solid #374151;
+    color: #9ca3af;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.new-cat-btn {
+    background: royalblue;
+}
+
+.action-btn:hover:not(:disabled) {
+    background: #374151;
+    color: #e5e7eb;
+}
+
+.action-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background: #0f172a;
+    border-color: #1e293b;
+}
+
+.btn-delete {
+    background: #ef4444;
+    border-color: #dc2626;
+    color: #fff;
+}
+
+.btn-delete:hover {
+    background: #dc2626;
+    color: #fff;
+}
+
+.btn-save {
+    background: #2ab133;
+    border-color: #2e7d32;
+    color: #fff;
+}
+
+.btn-save:hover {
+    background: #2e7d32;
+    color: #fff;
+}
+
+.category-btn {
+    margin-left: 6px;
+}
+
+/* ===== APP TIME (DEV BAR) ===== */
+.app-time-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background: #2b2f33;
+    border-top: 1px solid #3f3f46;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 8px 12px;
+    font-size: 13px;
+    color: #e5e7eb;
+
+    z-index: 9999;
+}
+
+.app-time-label {
+    font-weight: 500;
+}
+
+.app-time-actions form {
+    display: inline-block;
+    gap: 6px;
+}
+
+.app-time-actions button {
+    background: #3f3f46;
+    border: none;
+    color: #f9fafb;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.app-time-actions button:hover {
+    background: #52525b;
+}
+
+.app-time-actions .reset {
+    background: #7f1d1d;
+}
+
+.app-time-actions .reset:hover {
+    background: #991b1b;
+}
+
+/* Custom Validation Borders */
+input.custom-invalid, textarea.custom-invalid {
+    border: 1px solid #dc3545 !important; /* Red border */
+}
+
+input.custom-valid, textarea.custom-valid {
+    border: 1px solid #198754 !important; /* Green border */
+}
+
+/* Ensure the JS error messages are colored correctly in dark mode */
+.invalid-feedback {
+    color: #dc3545;
+    font-size: 0.875em;
+    margin-top: 0.25rem;
+}
+
+.card-content {
+    display: block;     /* in case something made it flex */
+}
+
+.category-checkbox {
+    display: flex;       /* checkbox + label on one line */
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+    width: 100%;         /* force each row to take full width */
+}
+
+/* Override the global input width: 100% just for these checkboxes */
+.category-checkbox input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+    cursor: pointer;
+}
+
+.category-checkbox label {
+    margin: 0;
+    cursor: pointer;
+    font-weight: 400;
+}
