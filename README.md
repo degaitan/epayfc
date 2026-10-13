@@ -45,3 +45,5 @@ You need XAMPP (PHP and MySQL/MariaDB).
 
 
 Test accounts: `bob@example.com`, `emma@example.com`, `frank@example.com`, `grace@example.com`, and `admin@example.com` for the admin, with the password `Password1,`.
+
+All demo users and data are fictional.
